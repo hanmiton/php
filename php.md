@@ -69,4 +69,74 @@ Objetos de valor
 	Suelen ser inmutables(que no se pueden modificar)
 Pruebas
 assertInstanceOf //que sea una isntancia de alguna clase
-setExpected Exception //cuando queremons ver un error 
+setExpected Exception //cuando queremons ver un error
+
+REsumen
+Objetos 
+	estado 
+	mensajes
+	colaboracoin 
+	herencia
+	responsabilidad
+Componser
+	dependencias
+	autoloadgin
+Testing
+	definicion
+	comprobacion
+	matenimeinto
+Entidades
+	identidad
+	modelo del problema
+Objetos de valor
+	id<=>estado
+	inmutables
+Data transfer object antipatron(nunka usarlo siempre modelar objetos)
+	finalidad transmitir datos de un lugar a otro 
+
+cuadno el codigo es solo codigo php no es necesario cerrar el <?php
+
+si php esta en el contexto de un codigo html se cierr php
+
+ //subiendo aplicacon
+ 	tener un script que haga los pasos necesarios par subir el codigo
+ 	el cual es composer install
+ 	se tiene que subir el script pra subir dicha app y hacer deplyment
+ //performace no iteien nada que ver con el tamaño de los arcihvos
+ //patrones libros
+ 	design patterns explain alan shawolend
+ 	domain driver design
+ 	implementing driver design
+ //encapsulameinto
+ 	siemrpe modelar un objeto que ofresca un comortamiento pero que encapsule los datos
+ //polimorfismo
+ //cohecion
+ 	cuando se diseña objetos que tenga responsabilidades puntuales
+ 	objeto debe tener solo una unica responsabilidad(noes solo un mensaje)(se tienen los mensajes que son coherentes para su funcionalidad)
+ //acoplamiento
+ 	cuanto se necesita un objeto de otro
+ 	cuando se desea desacoplar se usa abstracciones
+//sobrecarga
+	tener un mensaje que puede recibir multiples argumentes y retorno diferente
+//sobreescritura
+	cuando una clases dle padre es pisada por una clase de la clase hija
+//ocultameinto
+	tenemso la capacidad de tner cosas privadas dentro de un objeto
+//encapsulalmiento
+	mensajes con propiedades privadas en su combinacion
+//abstraccion e interfaces
+	esto se utiliza pra hacer desacoplamiento
+//static
+	mensajes dentro de una clase(no usarlos)
+//interface
+	tipos y contratos
+	objeto q implente esta interface tienen que implementar los metodos de dicha interface
+//ciclo de vida
+	constructor (new)
+	despues vivo
+	destruct
+//phpbru gestion de versiones para php
+//pdo
+	son objetos
+	estandar
+	conexcion a base de datos 
