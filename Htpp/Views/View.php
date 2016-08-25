@@ -18,8 +18,5 @@ class View{
 		'/resoruces/views';
 		$templatePath = "$path/{$this->tempalte}.php"
 		return $this->includeTempalteFromFile($templatePath,$this->params)
-		if (file_exists($templatePath)){
-
-		}
 	}
 }
