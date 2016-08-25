@@ -139,4 +139,117 @@ si php esta en el contexto de un codigo html se cierr php
 //pdo
 	son objetos
 	estandar
-	conexcion a base de datos 
+	conexcion a base de datos
+//php y laravel
+//que es la web
+	Protocolo HTTP
+	Lenguaje HTML
+	Arquitectura Cliente-Servidor
+	Pedir un archivo
+	Ruteo de URI
+	PHP+Json JSON API + Client-side programming
+
+Modelo Vista Controlador(MVC)
+Sepracion de responsabilidades
+	Modelo Logica de neogio (modelo de dominio)
+	Vista Presentacion Visual
+	Controlador Coordina las acciones del usuairo
+		Decir quien haga que cosa y reponder al usuario
+		100% ligado a pedido de la web y quein lo puede sresolver
+Controlador
+	Coordinan acciones
+		Conocer al que pide y al que lo hace delegar (mediador)
+	Se asocia a uno o mas pedidos http
+		Verbo
+		Request url
+	Traduce pedido http mensaje dominio
+	Arma la respuesta al pedido
+Paquete de laravel
+	Illuminate/http
+Para corre un servidor de php embebido
+	php -S localhost:8000 public/idnex.php
+Staticos metodos que estan a nivel de calse se llama con ::
+
+. siver pra concatenar
+
+Vista
+	Representacion grafica d ela respuesta
+	Separar objetos(PHP) de html
+	Poca o ningua necesidad de lógica
+extract ($params)
+inversion de dependencias
+	objeto pide de afuera y alguien se la tiene qeu dar (dependencias mas desacopladas)
+router
+	es un objeto que nos poermite vinvualr las rutas con conroleres
+{id}
+	se especifica un parametro dentro de la ruta
+
+
+Proceso
+	Se hace el requests
+	Controlador
+		Coje le request
+		Genera un new vista
+		y envia dicha vista
+ob_start();//guardamos en un buffer
+return ob_get_clean();
+
+Modelo
+	Represetna el problema y la solucion implementada
+	Separa logica de negocio de la presentacion
+	Compone un Modelo de Dominio
+Modelado de Coleccioones
+	Objetos que represetna una colecicion de otros
+	Buscar entre la colecion
+	Agregar y quitar
+	Filtrar coleccion
+Operaciens dentro de objetos
+	collapse
+	contains
+	count
+	diff
+	each
+	every
+	fetch
+	filter
+	etc
+pakagist 
+	todos los paquetes para php
+::
+ 	token que permite acceder a elementos estáticos, constantes, y sobrescribir propiedades o métodos de una clase.
+ Web
+ 	Protocolo http
+ 	html(css-js)
+ 	cliente-servidor
+ MVC
+ 	Patron de arquitectura
+ 	Separacin de responsabilidad
+ Controladores
+ 	reciben pedido
+ 	Delegan mensaje
+ 	Arman la vista
+ Vista
+ 	Repreta la grafica
+ 	Poca logica
+ Modelo
+ 	Problmea
+ 	Comunicacion
+ 	Idioma.jerga
+ Colecciones
+ 	Contiene objs
+ 	Mensajes mas claros
+ Container de laravel
+ 	crear otros objetos y darle todo lo que necesites
+ 	gran fabrica de objetos
+ Reflexoin
+ 	metaprogramacion
+ Modelo es una red de clases
+ Ataques por id en query params
+ MVC
+ 	Modelo (modelo de dominio)
+ 	Web(controller y vistar que representan entradas y salidas de la web)
+ Request 
+ 	no era el nuestro
+ 	Metodos statics
+ PHP
+ 	no tiene sobrecarga de contructores
