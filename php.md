@@ -296,3 +296,99 @@ Patron servicios
 	no tienen estado (stateless)
 	Se comunica con infraestrucrua
 	responde pedidos de capas upseriores
+Bases de datos
+	persistencia
+	software externo que no va ayudar a persistir los datos
+	crear/editar/elimianr datos
+	guardar datos entre pedidos
+	optimizados para busqueda
+	transaccionalidad
+nosql
+	no se garantiza la consistencia de los datos
+PDO-PHPData Objects
+	Abstracion de bas de datos
+	Modelo de objetos
+	Estandar recomendado por la comunidad
+pdo
+	es para q no importe la base de datos que se usa
+Statement
+	algo q preparamso y vamos ejecutar
+
+Repositories
+	pdo
+	orm()
+	Encapsula el acceso a datos
+	Se modelna como una coleccion
+	Separan logica de persistencia
+
+Queries base datos
+	no poner $ en las consultas de base de datos
+	porq puede darse sql inyeccin
+	usar :id
+$statement->bindParam(
+	':id',
+	$id,
+	\PDO::PARAM_INT
+);
+
+Errores y Excepcines(Exceptions)
+	Detiene el flujo norma de la aplicacion
+	Comunican que fallo
+	Nos permite reaccioanr al error y decidir ocmo continuar
+Errores
+	no se pueden capturar
+framework laravel
+	nos da herramientas
+	tareas
+	concentrarse en que se trata nuestro proyecto
+
+Laravel 
+fundamentos
+	es un framework moderno de PHP
+	Objetivos
+		rapidamente
+		divertido de usar
+		facil
+		buenas practicas
+		patrones S.O.L.I.D
+La base
+	composer
+		package manager para php uno de los mas grandes que existe
+	componentes de symfony
+
+	Swiftmail
+	Monolog
+	Carbon
+	Psr-7
+Princpales caracteristicas
+	Artisan cli
+	controladores
+	orm
+	migraciones
+	blade templates
+	Poderoso router
+	cache
+	eventos
+	sutenticacion
+	queues
+	acl
+		contron de permisos para usuarios
+	poderos contenedor
+		poderos contenedor de dependencias
+Ecosistema
+	Homestead
+		Una maquina virtual para poder usar todas las herrameitnas que nos da laravel
+	Supoort
+		Libreria de sopoerte
+		Manipulacion cadenas
+		Colecciones
+	Cashier y Socialite
+		Cashier es forma sencilla instalar stripe como metodo de pago
+		Cliente de conexion outh 2 facebook twitter
+	Elixir
+		Contenedor que nos da una API
+		para usar gulp
+	Forge
+		Provisionar servidore sdesde cero para lanzar el producto lo mas rapido posible
+	Envoyer
+		Servicio para tener 0 teimpo de baja cuando lanzamos nuestra aplicacion sin ftp
