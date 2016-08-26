@@ -253,3 +253,46 @@ pakagist
  	Metodos statics
  PHP
  	no tiene sobrecarga de contructores
+Capa
+	web
+		entradas 
+		salidas
+	capa d emodelo de dominio
+capas
+	Http
+		controllers
+		views
+	Consola
+		commands
+	api
+		controllers
+		transormers(convertir objetos en un mensaje json)
+Modelo de dominio
+	entities
+	services
+	value object
+	events
+	exceptions
+Infraestrucutra-Datos
+	repositorios(bas de datos)
+	adapters(APIs)
+
+Arquitectura por capas
+	Src
+		Domanin
+			Autrho.php
+			Email.php
+			Post.php
+			User.php
+	domain es donde van las entities que solucinana nuestro problema
+	Infrastructure
+		fakeDatabase.php
+	infraestrucutra es la capa de datos
+
+Patron servicios
+	Objetos qeu su rol es hacer algo pero q no estan represetnados como una identidad
+	como afinador (accion especifica dentro del codigo)
+	coodinadores de dominio
+	no tienen estado (stateless)
+	Se comunica con infraestrucrua
+	responde pedidos de capas upseriores
