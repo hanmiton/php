@@ -383,7 +383,7 @@ Ecosistema
 		Manipulacion cadenas
 		Colecciones
 	Cashier y Socialite
-		Cashier es forma sencilla instalar stripe como metodo de pago
+		Cashier es forma sencilla instalar stripe como metodo de pagok
 		Cliente de conexion outh 2 facebook twitter
 	Elixir
 		Contenedor que nos da una API
@@ -392,3 +392,278 @@ Ecosistema
 		Provisionar servidore sdesde cero para lanzar el producto lo mas rapido posible
 	Envoyer
 		Servicio para tener 0 teimpo de baja cuando lanzamos nuestra aplicacion sin ftp
+Instalcion laravel
+	1. Instalar composer
+		API como nosotros como programadores escribmos codiog para nosostros mismo com para otras personas
+	2.- composer create-project laravel/laravel --preger-dist
+		composer global requiere "laravel/installer=~1.1"
+	laraver new platziphp //creando aplicacioens en laravel
+	php artisa para ver si la app se encuentra instalada
+
+laravel/laravel
+	solo da una estructura
+laravel/framework
+	donde estan todas las librerais api interna
+
+homestead
+	 half apagarla
+	 suspend suspender
+config
+	viene para cache
+	view
+		rutas de nuestras vistas
+	mail
+		para usar proveedores de mails
+		log se usa pra desarrollo
+	database
+
+env
+	dot env
+		nos deja incluier un arcivho .env donde podemos ver las varialbes de entorno de nuestro servidor
+configuracion proyecto
+
+rutas
+	metodos http(get,post,put,patch,delete)
+	configuracion
+		reqeuridos
+		opcionales
+		regex
+	agrupados
+	por nombre
+controladores
+	recibir pedidos y respuestas http
+	ayudan organizar codigo
+	inyeccion de dependencias
+		constructor
+		metodo
+en php no se puede extender mas de una clase
+
+InicioController@inicio
+ con esto llamamos al controller desde llas rutas
+Blade
+	promueve buanas practicas
+controlador
+	reciben request
+	lanzan response
+Blade
+	Simple poderos
+	ejecuta php
+	php en cache
+	herencia vistas
+Sintaxis
+	{{variable}}
+	{{{variable_crudo}}}
+	@{{javascript}}
+	@extend('layout')//extendemos el layout qeu deseamos
+	@section('lateral)@stop')
+	@if(true)@else@endif
+	@foreach($vars as $var)@endforeach
+	@unless()
+	@yield('content') ('css') ('js') //permite extender en otra vista el tipo de archivos
+	@stop para parar la vista que se a importado
+:: (metodo estatico)
+	usar fachadas o helpers
+
+Elixir
+
+versinaje
+	.version('public/css/app.css');
+
+	usando versioesn
+		{{elixir('css/app.css')}}
+Artisan
+	linea de comandos
+		crear clase con facilidad
+		migraiones
+		queues
+		cache
+		llenar base de datos con datos de prueba
+		acceso a la aplicaciones por medio de laconsola
+php artisan down
+php artisan up
+php artisa help make:controller
+	//para generar un controlador
+		art make:controller nombre.controlador
+route:cache 
+	solo usar en produccion
+artisan route list
+	numero los metodos con susrespectivas rutas
+php artisa tinker
+	permite entrat a la consola de ocmandos
+migraciones
+	control de versiones de la base de datos
+	mapero de campos de base de datos
+	facil compartir
+	esquema de base de datos
+	regresar cambios
+art make:migration create_post_table
+	
+Laraverl
+	no es afcil compartir en hosting compartidos
+
+Empezar aprender elixir
+	elixir subir archivos minificados
+Modelos y eloquent
+	Eloquent
+		api comun para varias bases de datos
+	Cada tabla tiene su modelo
+	Operaciones select, insert update delete
+	relaciones
+		uno a uno 
+		uno a mucho
+		muchos a muchos
+Modelos 
+	objetos de elocuent
+artisan make:model Post (para la creacin de un modelo)
+
+//perpage = 15
+	cuanto se desaea por pagina
+$fillable
+	protegernos insercion de datos masivos a elocute
+usar sequel pro para ver los datos
+
+artisan 
+	tinker para hacer preubas
+$fillable
+	son aquelllos lo que se teine que pasar un parametro para guardar
+dd
+	para volver los parametros de una forma bonita
+Relaciones
+	php artisan migrate:rollback
+	dropIfExists(si existe lo borra)
+php artisan migrate 
+	para que regrese toda la base dedatos
+
+haciendo las relaciones
+
+public fucntion posts(){
+	return $this->hasMany(Post::class)
+}
+
+php artisan migrate:refresh
+	hasOne ( uno a uno)
+
+Creacion desde 0 con laravel
+	
+php artesian php:name Platziphp
+factories
+	hacer datos de mentiras
+Seader
+	manipula los datos de una manera inicial
+
+Vistas
+return view('home', ['name' => $name]);
+
+entrar arreglos
+	@foreach($posts as $post)
+		{{ $post->name}}
+	@endforeach
+eager loading
+	with('author')->get()
+
+Vistas con lo menor de logica posible
+	route dentro de vista
+	{{route('post_show_path', $post-id)}}
+gulp --produccion
+2 tipos de app hoy en dia
+	forge
+		para hacer deploy app
+laravel autenticacion
+	controlador@metodo
+$request->only(['email','password'])
+
+Service Container
+Control de dependencias
+Inyeccin de dependencias
+Multiples forams de crear instanias
+	Bind
+	Singleton
+	Instance
+
+	Providers
+		Se registran dependencias dentro de un contenedor
+			service provider
+				dos metodos
+					boot
+					 va despues del metodo boot
+					register
+						va antes que todo 
+middleware 
+	don com cebollas
+	cosas que encapsulan el request
+	metodos que van antes de que el controlador reciba el reqeust
+routeMiddleware
+	decir las rutas que se peuden usar antes qeu lleguen la rutas
+view composer
+	compartir variables a cualqueira de nuestras vistas
+compartir datos netre todas las vistas
+	siermpe usar la inyeccion de dependencias antes q facaces
+expresiones regulares
+	->where('id','[1-9]+')//expresiones regulares en rutas
+partials
+	reutiliacion de vistas para varias ocaciones
+	@include('partials.errors')
+view composer
+	compartir datos globales entre todas las vistas
+consutra que es facade
+ellocuente 
+	active record
+doctrine
+	data mapper
+form request
+	como la ultima cpaa antes de llegar al controler
+conceptos avanzados de objetos
+	
+extends herencia
+	protedted par que se puedan heredar
+abstract 
+	cuando hay metodo ligeramente distintos y se desea q la clases hija implemente el metodo
+	funcino sin implementacion
+	la clase entrera tiene que ser abstract
+polimorfismo
+	es poder usar objetos que son hijos de algunos otros objetos en el contexto de su padre
+interface (implements)
+
+Eventos
+	modelan hecho q sucedio
+	objetos pueden reaccionar a ellos
+	agregar efectos secundarios
+	Arquitectur orientada a objetos
+mock objeto falso
+	evento asociado aun objeto q lo retorna cuando pase dicho evento
+instalar vagrant
+	vagrant init
+		iniciar
+	vagrant up
+		headless no tiene interface grafica
+	vagrant status
+	vagrant ssh
+		para conectarse a la maquina virtual
+	todas las configuracines de infraestrucutra se guardan en la maquina virtual
+PuPHPet
+	codigo q se necesita en vagrant
+bucket
+	para el almacenamiento de archivos en amazon
+cronjob
+	ejecutra tareas dentro de laravel
+		ejemplo envia rmensaje a todos los cumpleañeros
+			cadamiuto
+			dayli
+			everyFiveMinutes();
+			twinceDayli()
+El patrón Decorator responde a la necesidad de añadir dinámicamente funcionalidad a un Objeto. 
+
+falldas
+	Las peticiones a frameworks como Laravel son recibidas por:
+		rutas
+	Patron decoradro en vista nos permite
+		separara html logica
+	Cual es inconveniente patorn mvc
+		mucho codigo contoller
+	en laravel segun la convecion de lalves foranesas ¿como se llamarai al a columna que relaciona un producto?
+		id_categories
+	Cual de estas tareas no deberia ser ejecutad por le controlador
+		consulta base de datos
+	como escribimos campo tipo teto con laravel
+		Input(text)
+	laravel los facades nos permite

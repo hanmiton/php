@@ -13,3 +13,4 @@ class  UserTest extends PHPUnit_Framework_TestCase{ //extendienod de test para h
 }
 
 //sobreescribir es escribir lo mismo pero con un hijo
+

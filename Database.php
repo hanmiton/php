@@ -12,3 +12,5 @@ class Database
 		return $statement->fetchAll(); //se le piede que devuelva todo lo que recibe
 	}
 }
+
+El patrón Decorator responde a la necesidad de añadir dinámicamente funcionalidad a un Objeto. 
