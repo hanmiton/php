@@ -10,3 +10,5 @@ Route::get('/contacto/{usuario}', function($usurio){
 
 Controladores
 	cuando es muy peqeuño es bueno escribir en el archivo de rutas
+
+Route::get('')

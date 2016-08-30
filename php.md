@@ -667,3 +667,4 @@ falldas
 	como escribimos campo tipo teto con laravel
 		Input(text)
 	laravel los facades nos permite
+		.....
