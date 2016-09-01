@@ -653,18 +653,30 @@ cronjob
 			twinceDayli()
 El patrón Decorator responde a la necesidad de añadir dinámicamente funcionalidad a un Objeto. 
 
-falldas
+falladas
 	Las peticiones a frameworks como Laravel son recibidas por:
 		rutas
+		#frontend Controller
 	Patron decoradro en vista nos permite
 		separara html logica
+		#layout comun en todas las vistas
 	Cual es inconveniente patorn mvc
 		mucho codigo contoller
+		#demasiad responsabilidad el modelo
 	en laravel segun la convecion de lalves foranesas ¿como se llamarai al a columna que relaciona un producto?
 		id_categories
+		#category_id
 	Cual de estas tareas no deberia ser ejecutad por le controlador
 		consulta base de datos
+		#ningua anteirores
 	como escribimos campo tipo teto con laravel
 		Input(text)
+		form (text)
 	laravel los facades nos permite
-		.....
+		tener un layour general
+	una variable no definidad en php
+		warning
+	::
+		statci method
+	cual de las siguiente meddidas de seguridad no impolementa laravel
+		ningua anteriores
